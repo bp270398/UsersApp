@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingAbout"
+    tools:context=".AboutFragment">
+
+    <ImageView
+        android:src="@drawable/about_img"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_margin="18dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_size_h1"
+        android:gravity="bottom|center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:text="@string/application_made_by"
+        android:textSize="@dimen/textSizeAbout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:text="@string/university"
+        android:textSize="@dimen/textSizeAbout"
+        android:gravity="bottom|center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mapHeight"
+        android:id="@+id/map_container"/>
+</LinearLayout>

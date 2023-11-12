@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateEntityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/itemsPadding">
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="0dp"
+            tools:src="@drawable/crm"
+            android:contentDescription="@string/user_avatar" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            tools:text="username" />
+        <TextView
+            android:id="@+id/tvDateOfBirth"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            tools:text="dd-MM-yyy" />
+
+
+
+        <!--    data attr    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="@string/fName"
+                android:text="@string/fName"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/labelWidth"
+                android:layout_margin="1dp"/>
+            <EditText
+                android:id="@+id/tvFirstName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="1dp"
+                tools:text="@tools:sample/first_names"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="@string/lName"
+                android:text="@string/lName"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/labelWidth"
+                android:layout_margin="1dp"/>
+            <EditText
+                android:id="@+id/tvLastName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="1dp"
+                tools:text="@tools:sample/last_names"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="@string/gender"
+                android:text="@string/gender"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/labelWidth"
+                android:layout_margin="1dp"/>
+            <EditText
+                android:id="@+id/tvGender"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="1dp"
+                android:autofillHints="Name"
+                android:inputType="text"
+                tools:text="@tools:sample/lorem/random"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="@string/email"
+                android:text="@string/email"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/labelWidth"
+                android:layout_margin="1dp"/>
+            <EditText
+                android:id="@+id/tvEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="1dp"
+                android:autofillHints="email@email.com"
+                android:inputType="textEmailAddress"
+                tools:text="@tools:sample/lorem/random"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="@string/phoneNumber"
+                android:text="@string/phoneNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/labelWidth"
+                android:layout_margin="1dp"/>
+            <EditText
+                android:id="@+id/tvPhoneNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="1dp"
+                android:inputType="phone"
+                tools:text="@tools:sample/lorem/random"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="@string/socialInsuranceNumber"
+                android:text="@string/socialInsuranceNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/labelWidth"
+                android:layout_margin="1dp"/>
+            <EditText
+                android:id="@+id/tvSocialInsuranceNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="1dp"
+                tools:text="@tools:sample/lorem/random"/>
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end">
+            <Button
+                android:text="@string/cancel"
+                android:id="@+id/bCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:text="@string/save"
+                android:id="@+id/bSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
